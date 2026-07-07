@@ -331,11 +331,7 @@ export default function ProductFormModal({
                     : "border-gray-300"
                 }`}
               >
-                <option value="">
-                  {isLoadingCategories
-                    ? "loading..."
-                    : "Select Parent Category"}{" "}
-                </option>
+                <option value="">Select Parent Category</option>
                 {categoryTree.map((c) => (
                   <option key={c.id} value={c.id}>
                     {c.name}
